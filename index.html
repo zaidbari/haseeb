@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Keyboard</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+</head>
+<body>
+	<div class="container my-4">
+		<div class="my-5 text-white">
+			<div class="row">
+				<div class="col-md-3">Input Formats</div>
+				<div class="col-md-9">
+					<input type="radio" class="btn-check" name="options" id="string" value="string" autocomplete="off" checked>
+					<label class="btn btn-outline-light" for="string">String</label>
+
+					<input type="radio" class="btn-check" name="options" id="image" value="image" autocomplete="off">
+					<label class="btn btn-outline-light" for="image">Image</label>
+				</div>
+			</div>
+			<div id="inputResults" class="my-4">
+					<input type="text" class="form-control" id="stringInput" placeholder="Input string">
+					<input class="form-control d-none" type="file" id="imageInput">
+			</div>
+		</div>
+    <textarea id="write" class="form-control mb-3 w-100" disabled readonly></textarea>
+    <ul id="keyboard" class="row" data-color="red" data-pairs="2">
+			<div class="col-md-12 d-flex justify-content-center mb-2">
+				<span class="letter">q</span>
+        <span class="letter">w</span>
+        <span class="letter">e</span>
+        <span class="letter">r</span>
+        <span class="letter">t</span>
+        <span class="letter">y</span>
+        <span class="letter">u</span>
+        <span class="letter">i</span>
+        <span class="letter">o</span>
+				<span class="letter">p</span>
+			</div>
+			<div class="col-md-12 d-flex justify-content-center mb-2">
+				<span class="letter">a</span>
+        <span class="letter">s</span>
+        <span class="letter">d</span>
+        <span class="letter">f</span>
+        <span class="letter">g</span>
+        <span class="letter">h</span>
+        <span class="letter">j</span>
+        <span class="letter">k</span>
+				<span class="letter">l</span>
+			</div>
+			<div class="col-md-12 d-flex justify-content-center mb-2">
+				<span class="letter">z</span>
+        <span class="letter">x</span>
+        <span class="letter">c</span>
+        <span class="letter">v</span>
+        <span class="letter">b</span>
+        <span class="letter">n</span>
+        <span class="letter">m</span>
+			</div>
+		</ul>
+		<div class="text-center">
+			<button class="btn-outline-warning btn" id="reset">RESET</button>
+		</div>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/keyboard.js"></script>
+</body>
+</html>
